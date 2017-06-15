@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/haha', 'SiswaController@index');
+Route::group(['prefik'=> 'admin','middleware'=>['auth']],function()
+	{
+		Route::resource('authors', 'AuthorsController');
+	});
