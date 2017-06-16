@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,6 +14,8 @@
     <link href="{{asset('/css/app.css')}}" rel="stylesheet">
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="/css/jquery.dataTables.css" rel="stylesheet">
+    <link href="/css/dataTables.bootstap.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -90,7 +92,11 @@
 
     <!-- Scripts -->
     <script src="{{asset('/js/app.js')}}"></script>
+    <script type="/js/jquery.dataTables.min.js"></script>
+    <script type="/js/dataTables.bootstrap.min.js"></script>
     <!-- <script src="{{asset('/js/bootstrap.min.js')}}"></script> -->
+    @yield('scripts')
+
     
 </body>
 </html>
